@@ -14,7 +14,7 @@ ORDER BY funds_raised_millions DESC;
 SELECT company,sum(total_laid_off)
 FROM layoffs_staging2
 group by company
-order by 2 desc;     -- instead of using the column name we can also use its index for sorting in this it sort by total_laid_of,because it is the second column
+order by 2 desc;     
 
 SELECT industry,sum(total_laid_off)
 FROM layoffs_staging2
